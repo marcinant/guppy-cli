@@ -26,7 +26,12 @@ var yargs = require('yargs')
 var argv = yargs.argv;
 
 var hooks = '  applypatch-msg, commit-msg, post-applypatch, post-checkout, ' +
-  'post-commit,\n  post-merge, post-receive, post-rewrite, post-update, ' +
+  'post-commit,\n post-flow-bugfix-delete, post-flow-bugfix-finish, post-flow-bugfix-publish, post-flow-bugfix-pull, ' +
+  'post-flow-bugfix-start, post-flow-bugfix-track, post-flow-feature-delete, post-flow-feature-finish, ' +
+  'post-flow-feature-publish, post-flow-feature-pull, post-flow-feature-start, post-flow-feature-track, ' +
+  'post-flow-hotfix-delete, post-flow-hotfix-finish, post-flow-hotfix-publish, post-flow-hotfix-start, ' +
+  'post-flow-release-branch, post-flow-release-delete, post-flow-release-finish, post-flow-release-publish, ' +
+  'post-flow-release-start, post-flow-release-track, post-merge, post-receive, post-rewrite, post-update, ' +
   'pre-applypatch,\n  pre-auto-gc, pre-commit, pre-push, pre-rebase, ' +
   'pre-receive,\n  prepare-commit-msg, update';
 
