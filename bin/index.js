@@ -33,6 +33,10 @@ var hooks = '  applypatch-msg, commit-msg, post-applypatch, post-checkout, ' +
   'post-flow-release-branch, post-flow-release-delete, post-flow-release-finish, post-flow-release-publish, ' +
   'post-flow-release-start, post-flow-release-track, post-merge, post-receive, post-rewrite, post-update, ' +
   'pre-applypatch,\n  pre-auto-gc, pre-commit, pre-push, pre-rebase, ' +
+  'pre-flow-feature-delete, pre-flow-feature-finish, pre-flow-feature-publish, pre-flow-feature-pull, ' +
+  'pre-flow-feature-start, pre-flow-feature-track, pre-flow-hotfix-delete, pre-flow-hotfix-finish, ' +
+  'pre-flow-hotfix-publish, pre-flow-hotfix-start, pre-flow-release-branch, pre-flow-release-delete, ' +
+  'pre-flow-release-finish, pre-flow-release-publish, pre-flow-release-start, pre-flow-release-track, ' +
   'pre-receive,\n  prepare-commit-msg, update';
 
 if (argv.hooks) {
